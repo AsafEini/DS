@@ -50,7 +50,7 @@ class Trie {
     deleteWord(word) {
         this.recursivelyDeleteWord(this.root, word, 0);
         const rootNode = this.root[word[0]];
-        this.deleteNode(this.root, !Object.keys(rootNode.children).length, word[0]);
+        this.deleteNode(this.root, !Object.keys(rootNode.children).length && !rootNode.isFinalChar, word[0]);
     }
 
     deleteNode(nodes, condition, letter) {
@@ -64,13 +64,14 @@ class Trie {
         const currentNode = nodes[letter];
         if(currentNode) {
             if(currentNode.isFinalChar && this.checkIfLetterIsLast(word, index)) {
+                currentNode.isFinalChar = false;
                 return;
             }
             index++;
             this.recursivelyDeleteWord(currentNode.children, word, index);
             const latterNode = currentNode.children[word[index]];
             if(latterNode) {
-                const condition = !Object.keys(latterNode.children).length;
+                const condition = !Object.keys(latterNode.children).length && !latterNode.isFinalChar;
                 this.deleteNode(currentNode.children, condition, word[index]);
             }
         }
@@ -117,5 +118,7 @@ class Node {
 }
 
 const trie = new Trie();
-trie.addWordsToTree(['aa','aaa']);
-console.log(trie.autoComplete('a'));
+trie.addWordsToTree(['asaf','avi','arsenal','jordi','jojo']);
+console.log(trie.deleteWord('avi'));
+console.log(trie.deleteWord('jordi'));
+console.log(trie.autoComplete('j'));
