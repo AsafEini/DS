@@ -12,6 +12,7 @@ class Trie {
             this.addLetterRecurssivly(this.root, word, 0);
         });
     }
+
     addLetterRecurssivly(nodes, word, index) {
         const letter = word[index];
         if (letter) {
@@ -31,6 +32,7 @@ class Trie {
     searchWord(word) {
         return this.recursiveSearch(this.root, word, 0);
     }
+
     recursiveSearch(nodes, word, index) {
         const letter = word[index];
 
@@ -85,6 +87,7 @@ class Trie {
         }
         console.log('no such combination');
     }
+
     recursivelyFindAllWords(node, str, word, answers) {
         if(node.isFinalChar) {
             answers.push(str + word)
