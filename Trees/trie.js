@@ -50,7 +50,8 @@ class Trie {
     deleteWord(word) {
         this.recursivelyDeleteWord(this.root, word, 0);
         const rootNode = this.root[word[0]];
-        this.deleteNode(this.root, !Object.keys(rootNode.children).length && !rootNode.isFinalChar, word[0]);
+        const condition = !Object.keys(rootNode.children).length && !rootNode.isFinalChar;
+        this.deleteNode(this.root, condition, word[0]);
     }
 
     deleteNode(nodes, condition, letter) {
