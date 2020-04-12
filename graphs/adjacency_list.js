@@ -8,6 +8,7 @@ class Graph {
         this.nodes = [];
         this.cycleNumber = 0;
         this.allCycles = {};
+        this.unionChart = {};
     }
 
     addVertex(value) {
@@ -167,23 +168,68 @@ class Graph {
             this.findCycles(vertex,null,{},{},{});
         }
     }
+
+    findCycleUnion() {
+        for(let vertex in this.adjacencyList) {
+            this.unionChart[vertex] = vertex;
+        }
+        return this.unionCycle(1) || false;
+    }
+
+    unionCycle(parent, visited = {}) {
+        if(visited[parent]) {
+            return false;
+        }
+
+        visited[parent] = true;
+        for(let child of this.adjacencyList[parent]) {
+            if(!visited[child.node]) {
+                const union1Represent = this.find(parent);
+                const union2Represent = this.find(child.node);
+                if(union1Represent === union2Represent) {
+                    return true;
+                }
+                this.union(union1Represent, union2Represent);
+            }
+        }
+
+        for(let child of this.adjacencyList[parent]) {
+            if(!visited[child.node]) {
+               return this.unionCycle(child.node, visited)
+            }
+        }
+
+    }
+
+    find(vertex) {
+        return this.unionChart[vertex];
+    }
+    union(vertex1, vertex2) {
+        if(vertex1 <= vertex2) {
+            this.unionChart[vertex1] = vertex2
+        } else {
+            this.unionChart[vertex2] = vertex1
+        }
+    }
 }
 
 const graph = new Graph();
-graph.addVertex("A");
-graph.addVertex("B");
-graph.addVertex("C");
-graph.addVertex("D");
-graph.addVertex("E");
-graph.addVertex("F");
+graph.addVertex(1);
+graph.addVertex(2);
+graph.addVertex(3);
+graph.addVertex(4);
+graph.addVertex(5);
+graph.addVertex(6);
+graph.addVertex(7);
+graph.addVertex(8);
 
 
-graph.addEdge('A','B');
-graph.addEdge('A','F');
-graph.addEdge('B','C');
-graph.addEdge('C','D');
-graph.addEdge('C','F');
-graph.addEdge('D','E');
-graph.addEdge('E','F');
-graph.findAllCycles();
-console.log(graph.allCycles);
+graph.addEdge(1,2);
+graph.addEdge(2,3);
+graph.addEdge(3,4);
+graph.addEdge(4,5);
+graph.addEdge(5,6);
+graph.addEdge(5,7);
+graph.addEdge(7,8);
+graph.addEdge(7,1);
+console.log(graph.findCycleUnion());

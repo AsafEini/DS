@@ -16,3 +16,4 @@ defferedPromise.value.then((result) => {
 });
 
 console.log('time goes by...');
+

@@ -122,7 +122,10 @@ class Node {
 }
 
 const trie = new Trie();
-trie.addWordsToTree(['asaf','avi','arsenal','jordi','jojo']);
-console.log(trie.deleteWord('avi'));
-console.log(trie.deleteWord('jordi'));
-console.log(trie.autoComplete('j'));
+trie.addWordsToTree(['aa','aaa']);
+trie.deleteWord('aaa');
+trie.deleteWord('aa');
+console.log(trie.autoComplete('a'));
+trie.addWordsToTree(['aa']);
+trie.addWordsToTree(['aaa']);
+console.log(trie.autoComplete('a'));
