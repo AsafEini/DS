@@ -55,6 +55,12 @@ class Graph {
         delete this.adjacencyList[vertex];
     }
 
+    dfs(vertex) {
+        this.visitedNodes = {};
+        this.visitedSeq = [];
+        this.dfsTraversal(vertex);
+    }
+
     dfsTraversal(vertex) {
         this.visitedNodes[vertex] = true;
         this.visitedSeq.push(vertex);
@@ -65,6 +71,13 @@ class Graph {
                 this.dfsTraversal(sibling.node);
             }
         }
+    }
+
+    bfs(vertex) {
+        this.queue = [];
+        this.visitedNodes = {};
+        this.visitedSeq = [];
+        this.bfsTraversal(vertex);
     }
 
     bfsTraversal(vertex) {
@@ -82,6 +95,11 @@ class Graph {
                 }
             })
         }
+    }
+
+    dijkstra(srcNode) {
+        this.helperSTPtable = {};
+        this.dijkstraSTP(srcNode);
     }
 
     dijkstraSTP(srcNode) {
@@ -164,12 +182,14 @@ class Graph {
     }
 
     findAllCycles() {
+        this.allCycles = {};
         for(let vertex in this.adjacencyList) {
             this.findCycles(vertex,null,{},{},{});
         }
     }
 
     findCycleUnion() {
+        this.unionChart = {};
         for(let vertex in this.adjacencyList) {
             this.unionChart[vertex] = vertex;
         }
