@@ -46,13 +46,60 @@ class Graph {
         }
         return results;
     }
+
+    boruvkaMST() {
+        let results = [];
+        const repMap = {};
+        let components = this.numOfVertices;
+
+        for(let i = 1; i <= this.numOfVertices; i++) {
+            repMap[i] = i
+        }
+
+        while(components > 1) {
+            for(let i = 0; i < this.adjacentList.length; i++) {
+                const {vertex1, vertex2, weight} = this.adjacentList[i];
+                const x = this.find(vertex1, repMap);
+                const y = this.find(vertex2, repMap);
+                if(x !== y) {
+
+                    if(!results[x]) {
+                        results[x] = {vertex1, vertex2, weight};
+                    } else {
+                        results[x].weight > weight ? results[x] = {vertex1, vertex2, weight} : null;
+                    }
+
+                    if(!results[y]) {
+                        results[y] = {vertex1, vertex2, weight};
+                    } else {
+                        results[y].weight > weight ? results[y] = {vertex1, vertex2, weight} : null;
+                    }
+                }
+            }
+            for(let i = 1; i <= this.numOfVertices; i++) {
+                if(results[i]) {
+                    const {vertex1, vertex2} = results[i];
+                    const x = this.find(results[i].vertex1, repMap);
+                    const y = this.find(results[i].vertex2, repMap);
+                    if(x !== y) {
+                        this.union(x,y,repMap);
+                        console.log(`${vertex1}-${vertex2}`);
+                        components--;
+                    }
+                }
+            }
+            results = [];
+        }
+    }
 }
 const graph = new Graph(6);
-graph.addEdge(1,2,9);
+graph.addEdge(1,2,2);
+graph.addEdge(1,3,5);
 graph.addEdge(2,3,8);
 graph.addEdge(2,4,2);
-graph.addEdge(3,4,2);
+graph.addEdge(3,4,4);
 graph.addEdge(3,5,3);
 graph.addEdge(4,6,2);
 graph.addEdge(5,6,1);
-graph.kruskalMinSpanTree();
+console.log(graph.kruskalMinSpanTree());
+graph.boruvkaMST();
