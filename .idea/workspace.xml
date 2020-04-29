@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9cde0ff-1574-4b01-a668-d5bd5ac62ebc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maze/all_paths_maze.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +27,6 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -39,7 +37,8 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -72,18 +71,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,12 +90,13 @@
       <workItem from="1584375391503" duration="13946000" />
       <workItem from="1584688845471" duration="49685000" />
       <workItem from="1586675598103" duration="17611000" />
-      <workItem from="1587657291033" duration="11815000" />
+      <workItem from="1587657291033" duration="12944000" />
+      <workItem from="1588180658868" duration="489000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587750878427">
@@ -135,74 +123,78 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581074394870" />
-    <state width="1899" height="163" key="GridCell.Tab.0.bottom" timestamp="1588172039179">
+    <state width="1899" height="319" key="GridCell.Tab.0.bottom" timestamp="1588180009915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.0.center" timestamp="1588172039179">
+    <state width="1899" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009915" />
+    <state width="1899" height="319" key="GridCell.Tab.0.center" timestamp="1588180009915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.0.left" timestamp="1588172039179">
+    <state width="1899" height="319" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009915" />
+    <state width="1899" height="319" key="GridCell.Tab.0.left" timestamp="1588180009915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.0.right" timestamp="1588172039179">
+    <state width="1899" height="319" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009915" />
+    <state width="1899" height="319" key="GridCell.Tab.0.right" timestamp="1588180009915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.1.bottom" timestamp="1588172039179">
+    <state width="1899" height="319" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009915" />
+    <state width="1899" height="163" key="GridCell.Tab.1.bottom" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.1.center" timestamp="1588172039179">
+    <state width="1899" height="163" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.1.center" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.1.left" timestamp="1588172039179">
+    <state width="1899" height="163" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.1.left" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.1.right" timestamp="1588172039179">
+    <state width="1899" height="163" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.1.right" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
-    <state width="1899" height="163" key="GridCell.Tab.2.bottom" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.2.bottom" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
-    <state width="1899" height="163" key="GridCell.Tab.2.center" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.2.center" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
-    <state width="1899" height="163" key="GridCell.Tab.2.left" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.2.left" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
-    <state width="1899" height="163" key="GridCell.Tab.2.right" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.2.right" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
-    <state width="1899" height="163" key="GridCell.Tab.3.bottom" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.3.bottom" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
-    <state width="1899" height="163" key="GridCell.Tab.3.center" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.3.center" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
-    <state width="1899" height="163" key="GridCell.Tab.3.left" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.3.left" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
-    <state width="1899" height="163" key="GridCell.Tab.3.right" timestamp="1588172039180">
+    <state width="1899" height="163" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
+    <state width="1899" height="163" key="GridCell.Tab.3.right" timestamp="1588180009910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588180009910" />
     <state x="810" y="231" key="RollbackChangesDialog" timestamp="1586705237142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="810" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586705237142" />
+    <state x="445" y="174" key="SettingsEditor" timestamp="1588181148226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="445" y="174" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588181148226" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584802564371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,36 +225,6 @@
           <url>file://$PROJECT_DIR$/single_linked_list.js</url>
           <line>163</line>
           <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
-          <line>91</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
-          <line>81</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
-          <line>71</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
-          <line>62</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
-          <line>53</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="164" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

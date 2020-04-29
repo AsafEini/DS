@@ -51,6 +51,15 @@ class Maze {
             !this.visitedMatrix[position.y][position.x]);
     }
 
+    move(position, currentPosition, dest, results, direction) {
+        if(this.isPositionValid(position)) {
+            results.push(direction);
+            this.visitedMatrix[currentPosition.y][currentPosition.x] = true;
+            this.findAllPaths(maze, dest, position, results);
+            results.pop();
+            this.visitedMatrix[position.y][position.x] = false;
+        }
+    }
 
     findAllPaths(maze, dest, position = new Position(0,0), results) {
 
@@ -63,42 +72,18 @@ class Maze {
 
         //down
         pos = new Position(position.x, position.y + 1);
-        if(this.isPositionValid(pos)) {
-            results.push(this.DIRECTIONS.DOWNS);
-            this.visitedMatrix[position.y][position.x] = true;
-            this.findAllPaths(maze, dest, pos, results);
-            results.pop();
-            this.visitedMatrix[position.y][position.x] = false;
-        }
+        this.move(pos,position,dest,results,this.DIRECTIONS.DOWNS)
         //left
         pos = new Position(position.x + 1, position.y);
-        if(this.isPositionValid(pos)) {
-            results.push(this.DIRECTIONS.LEFT);
-            this.visitedMatrix[position.y][position.x] = true;
-            this.findAllPaths(maze, dest, pos, results);
-            results.pop();
-            this.visitedMatrix[position.y][position.x] = false;
-        }
+        this.move(pos,position,dest,results,this.DIRECTIONS.LEFT)
 
         //right
         pos = new Position(position.x - 1, position.y);
-        if(this.isPositionValid(pos)) {
-            results.push(this.DIRECTIONS.RIGHT);
-            this.visitedMatrix[position.y][position.x] = true;
-            this.findAllPaths(maze, dest, pos, results);
-            results.pop();
-            this.visitedMatrix[position.y][position.x] = false;
-        }
+        this.move(pos,position,dest,results,this.DIRECTIONS.RIGHT)
 
         //up
         pos = new Position(position.x, position.y - 1);
-        if(this.isPositionValid(pos)) {
-            results.push(this.DIRECTIONS.UP);
-            this.visitedMatrix[position.y][position.x] = true;
-            this.findAllPaths(maze, dest, pos, results);
-            results.pop();
-            this.visitedMatrix[position.y][position.x] = false;
-        }
+        this.move(pos,position,dest,results,this.DIRECTIONS.UP)
         return false;
     }
 }
