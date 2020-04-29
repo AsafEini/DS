@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9cde0ff-1574-4b01-a668-d5bd5ac62ebc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/maze/all_paths_maze.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphs/kruskalMinSpanningTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphs/kruskalMinSpanningTree.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -30,14 +32,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imaima/fonts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="Node.js.kruskalMinSpanningTree.js">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lab\data_structures\imaima\fonts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.all_paths_maze.js">
     <configuration name="adjacency_list.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/graphs/adjacency_list.js" working-dir="$PROJECT_DIR$/graphs">
+      <method v="2" />
+    </configuration>
+    <configuration name="all_paths_maze.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/maze/all_paths_maze.js" working-dir="$PROJECT_DIR$/maze">
       <method v="2" />
     </configuration>
     <configuration name="async-generators.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/async-generators.js" working-dir="$PROJECT_DIR$">
@@ -46,19 +59,16 @@
     <configuration name="kruskalMinSpanningTree.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/graphs/kruskalMinSpanningTree.js" working-dir="$PROJECT_DIR$/graphs">
       <method v="2" />
     </configuration>
-    <configuration name="single_linked_list.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/single_linked_list.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
     <configuration name="trie.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Trees/trie.js" working-dir="$PROJECT_DIR$/Trees">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.all_paths_maze.js" />
         <item itemvalue="Node.js.kruskalMinSpanningTree.js" />
         <item itemvalue="Node.js.adjacency_list.js" />
         <item itemvalue="Node.js.async-generators.js" />
         <item itemvalue="Node.js.trie.js" />
-        <item itemvalue="Node.js.single_linked_list.js" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +102,8 @@
       <workItem from="1583568124490" duration="13928000" />
       <workItem from="1584375391503" duration="13946000" />
       <workItem from="1584688845471" duration="49685000" />
-      <workItem from="1586675598103" duration="12470000" />
+      <workItem from="1586675598103" duration="17611000" />
+      <workItem from="1587657291033" duration="11815000" />
     </task>
     <servers />
   </component>
@@ -100,18 +111,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="694" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587750878427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587750878427" />
     <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584688664310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584688664310" />
-    <state x="715" y="224" key="#xdebugger.evaluate" timestamp="1585906444443">
+    <state x="715" y="224" key="#xdebugger.evaluate" timestamp="1588167806199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="715" y="224" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1585906444442" />
-    <state width="733" height="466" key="DebuggerActiveHint" timestamp="1586796353085">
+    <state x="715" y="224" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1588167806199" />
+    <state width="733" height="466" key="DebuggerActiveHint" timestamp="1588171862543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="733" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1586796353085" />
+    <state width="733" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1588171862543" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1586705235074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -120,70 +135,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581074394870" />
-    <state width="1899" height="163" key="GridCell.Tab.0.bottom" timestamp="1586796342405">
+    <state width="1899" height="163" key="GridCell.Tab.0.bottom" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342405" />
-    <state width="1899" height="163" key="GridCell.Tab.0.center" timestamp="1586796342405">
+    <state width="1899" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.0.center" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342405" />
-    <state width="1899" height="163" key="GridCell.Tab.0.left" timestamp="1586796342405">
+    <state width="1899" height="163" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.0.left" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342405" />
-    <state width="1899" height="163" key="GridCell.Tab.0.right" timestamp="1586796342405">
+    <state width="1899" height="163" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.0.right" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342405" />
-    <state width="1899" height="163" key="GridCell.Tab.1.bottom" timestamp="1586796342534">
+    <state width="1899" height="163" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.1.bottom" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342534" />
-    <state width="1899" height="163" key="GridCell.Tab.1.center" timestamp="1586796342534">
+    <state width="1899" height="163" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.1.center" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342534" />
-    <state width="1899" height="163" key="GridCell.Tab.1.left" timestamp="1586796342534">
+    <state width="1899" height="163" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.1.left" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342534" />
-    <state width="1899" height="163" key="GridCell.Tab.1.right" timestamp="1586796342534">
+    <state width="1899" height="163" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.1.right" timestamp="1588172039179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342534" />
-    <state width="1899" height="163" key="GridCell.Tab.2.bottom" timestamp="1586796342258">
+    <state width="1899" height="163" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039179" />
+    <state width="1899" height="163" key="GridCell.Tab.2.bottom" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342258" />
-    <state width="1899" height="163" key="GridCell.Tab.2.center" timestamp="1586796342257">
+    <state width="1899" height="163" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.2.center" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342257" />
-    <state width="1899" height="163" key="GridCell.Tab.2.left" timestamp="1586796342257">
+    <state width="1899" height="163" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.2.left" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342257" />
-    <state width="1899" height="163" key="GridCell.Tab.2.right" timestamp="1586796342257">
+    <state width="1899" height="163" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.2.right" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342257" />
-    <state width="1899" height="163" key="GridCell.Tab.3.bottom" timestamp="1586796342258">
+    <state width="1899" height="163" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.3.bottom" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342258" />
-    <state width="1899" height="163" key="GridCell.Tab.3.center" timestamp="1586796342258">
+    <state width="1899" height="163" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.3.center" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342258" />
-    <state width="1899" height="163" key="GridCell.Tab.3.left" timestamp="1586796342258">
+    <state width="1899" height="163" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.3.left" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342258" />
-    <state width="1899" height="163" key="GridCell.Tab.3.right" timestamp="1586796342258">
+    <state width="1899" height="163" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
+    <state width="1899" height="163" key="GridCell.Tab.3.right" timestamp="1588172039180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="163" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586796342258" />
+    <state width="1899" height="163" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588172039180" />
     <state x="810" y="231" key="RollbackChangesDialog" timestamp="1586705237142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,10 +211,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586704292912" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585906917599">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588165184215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585906917599" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588165184215" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -220,10 +235,34 @@
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/graphs/kruskalMinSpanningTree.js</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
+          <line>91</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
+          <line>81</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
+          <line>71</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
+          <line>62</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/maze/all_paths_maze.js</url>
+          <line>53</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="164" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
