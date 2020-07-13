@@ -55,6 +55,6 @@ function generateLPS(pattern, patternLen) {
     return LPS;
 }
 
-const txt = "godgodgod";
-const pat = "god";
+const txt = "wallwalla";
+const pat = "walla";
 kmp(txt, pat);
